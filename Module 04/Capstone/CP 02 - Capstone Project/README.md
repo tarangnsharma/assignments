@@ -16,6 +16,11 @@ Login
 Checkout
 Offers
 
+Assets:
+
+- Images.zip
+Download Images.zip
+
 ---
 
 ## Assets
@@ -31,3 +36,4 @@ Offers
 - [emptyCart.png](assets/Images/emptyCart.png)
 - [orderPlaced.png](assets/Images/orderPlaced.png)
 - [testing.png](assets/Images/testing.png)
+
