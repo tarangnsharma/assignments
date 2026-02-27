@@ -1,0 +1,21 @@
+name: module03_graded_solutions
+description: Module 03 Graded solutions (GC 11–GC 15). Flutter app at track root.
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cloud_firestore: ^5.4.4
+  firebase_core: ^3.8.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
