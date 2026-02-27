@@ -1,0 +1,19 @@
+name: module01_practice_solutions
+description: Module 01 Practice solutions (PC 01–PC 10) with clean architecture. No Firestore or external dependencies.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
