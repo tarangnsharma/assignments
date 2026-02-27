@@ -1,15 +1,16 @@
 name: module02_graded_solutions
 description: Module 02 Graded solutions (GC 06–GC 10). Flutter app at track root.
-publish_to: 'none'
+publish_to: "none"
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.0.0 <4.0.0'
+  sdk: ">=3.0.0 <4.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
   flutter_riverpod: ^2.6.1
+  audioplayers: ^6.1.0
 
 dev_dependencies:
   flutter_test:
@@ -18,3 +19,5 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/gc10/
