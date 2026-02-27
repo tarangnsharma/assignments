@@ -17,36 +17,34 @@ The potential UI design of the admin app and the User app is given as follows:
 
  
 
-1) Admin Panel UI Screenshot:
-
- 
-
-2) Admin UI dialog box:
-
- 
-
-3) User Login UI:
-
- 
-
-4) User Menu UI:
-
- 
-
-5) User Drawer UI:
-
- 
-
-6) Order status UI:
+1. Admin Panel UI: [admin_panel.png](assets/admin_panel.png) — [preview](https://tataneuskills.instructure.com/courses/572/files/37768/preview)
+2. Admin UI dialog box: [admin_dialog_box.png](assets/admin_dialog_box.png) — [preview](https://tataneuskills.instructure.com/courses/572/files/37769/preview)
+3. User Login UI: [user_login.png](assets/user_login.png) — [preview](https://tataneuskills.instructure.com/courses/572/files/37775/preview)
+4. User Menu UI: [user_menu.png](assets/user_menu.png) — [preview](https://tataneuskills.instructure.com/courses/572/files/37763/preview)
+5. User Drawer UI: [user_drawer.png](assets/user_drawer.png) — [preview](https://tataneuskills.instructure.com/courses/572/files/37766/preview)
+6. Order status UI: [order_status.png](assets/order_status.png) — [preview](https://tataneuskills.instructure.com/courses/572/files/37774/preview)
 
 ---
 
 ## Assets
 
-- [file_37763.png](assets/file_37763.png)
-- [file_37774.png](assets/file_37774.png)
-- [file_37775.png](assets/file_37775.png)
-- [file_37768.png](assets/file_37768.png)
-- [file_37769.png](assets/file_37769.png)
-- [file_37766.png](assets/file_37766.png)
+Place reference screenshots in the `assets/` folder with these names:
+
+
+| Screen           | Filename               |
+| ---------------- | ---------------------- |
+| Admin Panel      | `admin_panel.png`      |
+| Admin dialog box | `admin_dialog_box.png` |
+| User Login       | `user_login.png`       |
+| User Menu        | `user_menu.png`        |
+| User Drawer      | `user_drawer.png`      |
+| Order status     | `order_status.png`     |
+
+
+- [admin_panel.png](assets/admin_panel.png)
+- [admin_dialog_box.png](assets/admin_dialog_box.png)
+- [user_login.png](assets/user_login.png)
+- [user_menu.png](assets/user_menu.png)
+- [user_drawer.png](assets/user_drawer.png)
+- [order_status.png](assets/order_status.png)
 
