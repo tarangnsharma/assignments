@@ -1,25 +1,25 @@
 # Module 01 | Practice
 
-Practice assignments (PC 01–PC 10) and their solutions.
+Practice assignments (PC 01–PC 10) and their solutions. This folder is the Flutter app.
 
 ## Layout
 
-- **`package/core/`** – Core Flutter app and shared code for all assignments.
-  - **`lib/core/`** – Common code (theme, navigation).
-  - **`lib/features/pc01_wrap_products/`** … **`lib/features/pc10_grid_layout/`** – Each folder holds **both** the assignment (README + assets) **and** the solution code (presentation, domain).
+- **`lib/core/`** – Common code (theme, navigation).
+- **`lib/features/pc01_wrap_products/`** … **`lib/features/pc10_grid_layout/`** – Each folder holds **both** the assignment (README + assets) **and** the solution code (presentation, domain).
 - **`Module_01_notes.md`** – Notes for the practice assignments.
 
 ## Run the app
 
+From this folder (Practice):
+
 ```bash
-cd package/core
 flutter pub get
 flutter run
 ```
 
 ## Assignment + solution (per PC)
 
-Each lives in one feature folder under **`package/core/lib/features/`**:
+Each lives in one feature folder under **`lib/features/`**:
 
 | PC  | Feature folder (assignment README + assets + solution code) |
 | --- | ----------------------------------------------------------- |
@@ -34,4 +34,4 @@ Each lives in one feature folder under **`package/core/lib/features/`**:
 | 09  | `lib/features/pc09_reverse_async/`                          |
 | 10  | `lib/features/pc10_grid_layout/`                            |
 
-All paths above are relative to **`package/core/`**.
+All paths above are relative to this folder.
