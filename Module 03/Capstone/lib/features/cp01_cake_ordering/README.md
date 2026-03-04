@@ -15,21 +15,16 @@ Note: This final project will provide you with the opportunity to apply the conc
 
 The potential UI design of the admin app and the User app is given as follows:
 
- 
-
-1. Admin Panel UI: [admin_panel.png](assets/admin_panel.png) — [preview](https://tataneuskills.instructure.com/courses/572/files/37768/preview)
-2. Admin UI dialog box: [admin_dialog_box.png](assets/admin_dialog_box.png) — [preview](https://tataneuskills.instructure.com/courses/572/files/37769/preview)
-3. User Login UI: [user_login.png](assets/user_login.png) — [preview](https://tataneuskills.instructure.com/courses/572/files/37775/preview)
-4. User Menu UI: [user_menu.png](assets/user_menu.png) — [preview](https://tataneuskills.instructure.com/courses/572/files/37763/preview)
-5. User Drawer UI: [user_drawer.png](assets/user_drawer.png) — [preview](https://tataneuskills.instructure.com/courses/572/files/37766/preview)
-6. Order status UI: [order_status.png](assets/order_status.png) — [preview](https://tataneuskills.instructure.com/courses/572/files/37774/preview)
+1. Admin Panel UI: [admin_panel.png](assets/admin_panel.png)
+2. Admin UI dialog box: [admin_dialog_box.png](assets/admin_dialog_box.png)
+3. User Login UI: [user_login.png](assets/user_login.png)
+4. User Menu UI: [user_menu.png](assets/user_menu.png)
+5. User Drawer UI: [user_drawer.png](assets/user_drawer.png)
+6. Order status UI: [order_status.png](assets/order_status.png)
 
 ---
 
 ## Assets
-
-Place reference screenshots in the `assets/` folder with these names:
-
 
 | Screen           | Filename               |
 | ---------------- | ---------------------- |
@@ -39,12 +34,3 @@ Place reference screenshots in the `assets/` folder with these names:
 | User Menu        | `user_menu.png`        |
 | User Drawer      | `user_drawer.png`      |
 | Order status     | `order_status.png`     |
-
-
-- [admin_panel.png](assets/admin_panel.png)
-- [admin_dialog_box.png](assets/admin_dialog_box.png)
-- [user_login.png](assets/user_login.png)
-- [user_menu.png](assets/user_menu.png)
-- [user_drawer.png](assets/user_drawer.png)
-- [order_status.png](assets/order_status.png)
-
