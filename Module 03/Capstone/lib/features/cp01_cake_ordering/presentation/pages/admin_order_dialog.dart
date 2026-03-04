@@ -55,9 +55,11 @@ class _AdminOrderDialogState extends State<AdminOrderDialog> {
                         child: Checkbox(
                           value: _steps[i],
                           onChanged: (v) => setState(() => _steps[i] = v ?? false),
-                          activeColor: Colors.blue,
                           checkColor: Colors.white,
-                          fillColor: WidgetStateProperty.resolveWith((_) => Colors.white),
+                          fillColor: WidgetStateProperty.resolveWith((states) {
+                            if (states.contains(WidgetState.selected)) return Colors.blue;
+                            return Colors.white;
+                          }),
                           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
                         ),
                       ),

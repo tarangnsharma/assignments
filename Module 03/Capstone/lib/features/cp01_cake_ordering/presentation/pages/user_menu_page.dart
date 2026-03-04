@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-
 import 'package:module03_capstone/core/theme/app_theme.dart';
+
 import 'order_status_page.dart';
 import 'user_login_page.dart';
 
@@ -17,7 +17,7 @@ class UserMenuPage extends StatelessWidget {
       backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text('Hi $userName', style: const TextStyle(fontSize: 18)),
-        backgroundColor: Colors.transparent,
+        backgroundColor: const Color(0xFFF3E5F5),
         elevation: 0,
         foregroundColor: Colors.black87,
         leading: IconButton(
@@ -68,17 +68,20 @@ class UserMenuPage extends StatelessWidget {
                       RotatedBox(
                         quarterTurns: 3,
                         child: Container(
-                          margin: const EdgeInsets.only(top: 100),
-                          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-                          child: Row(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              _flavorChip('All Flavors', selected: true),
-                              const SizedBox(width: 12),
-                              _flavorChip('Vanilla', selected: false),
-                              const SizedBox(width: 12),
-                              _flavorChip('Chocolate', selected: false),
-                            ],
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 12, vertical: 8),
+                          child: SingleChildScrollView(
+                            scrollDirection: Axis.horizontal,
+                            child: Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                _flavorChip('All Flavors', selected: true),
+                                const SizedBox(width: 12),
+                                _flavorChip('Vanilla', selected: false),
+                                const SizedBox(width: 12),
+                                _flavorChip('Chocolate', selected: false),
+                              ],
+                            ),
                           ),
                         ),
                       ),
@@ -90,7 +93,10 @@ class UserMenuPage extends StatelessWidget {
                             _foodCard(
                               name: 'Strawberry peanut',
                               price: '1.75',
-                              gradient: const [Color(0xFFF8BBD9), Color(0xFFE1BEE7)],
+                              gradient: const [
+                                Color(0xFFF8BBD9),
+                                Color(0xFFE1BEE7)
+                              ],
                               isAdd: true,
                             ),
                             const SizedBox(width: 12),
@@ -127,7 +133,10 @@ class UserMenuPage extends StatelessWidget {
                       Expanded(
                         child: _categoryCard(
                           title: 'New this week',
-                          gradient: const [Color(0xFFE1BEE7), Color(0xFFFCE4EC)],
+                          gradient: const [
+                            Color(0xFFE1BEE7),
+                            Color(0xFFFCE4EC)
+                          ],
                         ),
                       ),
                       const SizedBox(width: 12),
@@ -182,7 +191,8 @@ class UserMenuPage extends StatelessWidget {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (_) => const OrderStatusPage(orderId: '1234542m5322'),
+                              builder: (_) => const OrderStatusPage(
+                                  orderId: '1234542m5322'),
                             ),
                           );
                         },
@@ -190,7 +200,8 @@ class UserMenuPage extends StatelessWidget {
                           backgroundColor: AppTheme.drawerOrdersYellow,
                           foregroundColor: Colors.black87,
                           elevation: 2,
-                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(12)),
                         ),
                         child: const Text('Orders'),
                       ),
@@ -204,7 +215,8 @@ class UserMenuPage extends StatelessWidget {
                           Navigator.pop(context);
                           Navigator.pushAndRemoveUntil(
                             context,
-                            MaterialPageRoute(builder: (_) => const UserLoginPage()),
+                            MaterialPageRoute(
+                                builder: (_) => const UserLoginPage()),
                             (r) => false,
                           );
                         },
@@ -212,7 +224,8 @@ class UserMenuPage extends StatelessWidget {
                           backgroundColor: AppTheme.primaryPink,
                           foregroundColor: Colors.white,
                           elevation: 2,
-                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(12)),
                         ),
                         child: const Text('Logout'),
                       ),
@@ -233,7 +246,9 @@ class UserMenuPage extends StatelessWidget {
       decoration: BoxDecoration(
         color: selected ? Colors.white : Colors.transparent,
         borderRadius: BorderRadius.circular(8),
-        boxShadow: selected ? const [BoxShadow(color: Colors.black12, blurRadius: 4)] : null,
+        boxShadow: selected
+            ? const [BoxShadow(color: Colors.black12, blurRadius: 4)]
+            : null,
       ),
       child: Text(
         label,
@@ -255,10 +270,17 @@ class UserMenuPage extends StatelessWidget {
     return Container(
       width: 160,
       decoration: BoxDecoration(
-        gradient: gradient != null ? LinearGradient(begin: Alignment.topLeft, end: Alignment.bottomRight, colors: gradient) : null,
+        gradient: gradient != null
+            ? LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: gradient)
+            : null,
         color: bgColor,
         borderRadius: BorderRadius.circular(16),
-        boxShadow: const [BoxShadow(color: Colors.black12, blurRadius: 8, offset: Offset(0, 2))],
+        boxShadow: const [
+          BoxShadow(color: Colors.black12, blurRadius: 8, offset: Offset(0, 2))
+        ],
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -271,23 +293,28 @@ class UserMenuPage extends StatelessWidget {
                 color: Colors.white70,
                 borderRadius: BorderRadius.circular(12),
               ),
-              child: const Center(child: Icon(Icons.cake, size: 48, color: Colors.brown)),
+              child: const Center(
+                  child: Icon(Icons.cake, size: 48, color: Colors.brown)),
             ),
           ),
           Padding(
             padding: const EdgeInsets.fromLTRB(12, 0, 12, 8),
-            child: Text(name, style: const TextStyle(fontWeight: FontWeight.w600, color: Colors.black87)),
+            child: Text(name,
+                style: const TextStyle(
+                    fontWeight: FontWeight.w600, color: Colors.black87)),
           ),
           Padding(
             padding: const EdgeInsets.fromLTRB(12, 0, 12, 12),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text(price, style: const TextStyle(fontWeight: FontWeight.w600)),
+                Text(price,
+                    style: const TextStyle(fontWeight: FontWeight.w600)),
                 CircleAvatar(
                   radius: 16,
                   backgroundColor: isAdd ? Colors.blue : Colors.grey[400],
-                  child: Icon(isAdd ? Icons.add : Icons.remove, color: Colors.white, size: 20),
+                  child: Icon(isAdd ? Icons.add : Icons.remove,
+                      color: Colors.white, size: 20),
                 ),
               ],
             ),
@@ -297,25 +324,36 @@ class UserMenuPage extends StatelessWidget {
     );
   }
 
-  Widget _categoryCard({required String title, List<Color>? gradient, Color? bgColor}) {
+  Widget _categoryCard(
+      {required String title, List<Color>? gradient, Color? bgColor}) {
     return Container(
       height: 140,
       decoration: BoxDecoration(
-        gradient: gradient != null ? LinearGradient(begin: Alignment.topLeft, end: Alignment.bottomRight, colors: gradient) : null,
+        gradient: gradient != null
+            ? LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: gradient)
+            : null,
         color: bgColor,
         borderRadius: BorderRadius.circular(16),
-        boxShadow: const [BoxShadow(color: Colors.black12, blurRadius: 6, offset: Offset(0, 2))],
+        boxShadow: const [
+          BoxShadow(color: Colors.black12, blurRadius: 6, offset: Offset(0, 2))
+        ],
       ),
       child: Stack(
         children: [
-          const Center(child: Icon(Icons.dashboard_customize, size: 48, color: Colors.black26)),
+          const Center(
+              child: Icon(Icons.dashboard_customize,
+                  size: 48, color: Colors.black26)),
           Positioned(
             left: 12,
             right: 12,
             bottom: 12,
             child: Text(
               title,
-              style: const TextStyle(fontWeight: FontWeight.bold, color: Colors.black87),
+              style: const TextStyle(
+                  fontWeight: FontWeight.bold, color: Colors.black87),
             ),
           ),
         ],
