@@ -7,4 +7,3 @@
 Question 20: Implement a Flutter application that resembles the functionality of the "GET IT DONE" app, with the added feature of storing data on Firebase and incorporating email and password authentication.
 
 ---
-

@@ -7,4 +7,3 @@
 Question 18: Create a Flutter application that retrieves and displays user comments from the server using the API "https://jsonplaceholder.typicode.com/comments". The comments should include the name and email of each user.
 
 ---
-

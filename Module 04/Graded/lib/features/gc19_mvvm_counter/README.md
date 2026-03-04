@@ -7,4 +7,3 @@
 Question 19: Develop a Flutter application that follows the Model-View-ViewModel (MVVM) pattern and has similar functionality to the default counter app in Flutter.
 
 ---
-

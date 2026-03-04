@@ -5,6 +5,3 @@
 ## Problem Statement / Description
 
 Question 17: Implement email and password authentication in a Flutter app.
-
----
-
